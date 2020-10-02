@@ -1,0 +1,10 @@
+{
+	"name": "eimprodkv",
+	"properties": {
+		"annotations": [],
+		"type": "AzureKeyVault",
+		"typeProperties": {
+			"baseUrl": "https://eim-prod-kv.vault.azure.net/"
+		}
+	}
+}
