@@ -1,0 +1,24 @@
+{
+	"name": "eim_hana",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"description": "EIM HANA Database",
+		"annotations": [],
+		"type": "SapHana",
+		"typeProperties": {
+			"connectionString": "SERVERNODE=eim-qa-hana-base;UID=Azure",
+			"password": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "eimprodkv",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "eimuathanasec"
+			}
+		},
+		"connectVia": {
+			"referenceName": "eim-uat-ir",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
