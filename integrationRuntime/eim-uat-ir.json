@@ -1,0 +1,7 @@
+{
+	"name": "eim-uat-ir",
+	"properties": {
+		"type": "SelfHosted",
+		"description": "EIM UAT adf integration runtime"
+	}
+}
