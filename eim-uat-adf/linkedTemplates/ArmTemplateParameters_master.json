@@ -5,8 +5,20 @@
 		"factoryName": {
 			"value": "eim-uat-adf"
 		},
+		"eim_hana_connectionString": {
+			"value": ""
+		},
+		"eim_g2lake_accountKey": {
+			"value": ""
+		},
+		"eim_sqldb_dyn365byod_connectionString": {
+			"value": ""
+		},
 		"eimprodkv_properties_typeProperties_baseUrl": {
 			"value": "https://eim-prod-kv.vault.azure.net/"
+		},
+		"eim_g2lake_properties_typeProperties_url": {
+			"value": "https://eimuatg2lake.dfs.core.windows.net"
 		},
 		"containerUri": {
 			"value": ""
