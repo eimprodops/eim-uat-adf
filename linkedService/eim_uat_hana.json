@@ -1,0 +1,11 @@
+{
+	"name": "eim_uat_hana",
+	"properties": {
+		"description": "EIM HANA HNQ",
+		"annotations": [],
+		"type": "AzureKeyVault",
+		"typeProperties": {
+			"baseUrl": "https://eim-prod-kv.vault.azure.net/"
+		}
+	}
+}
