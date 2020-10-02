@@ -1,0 +1,20 @@
+{
+	"name": "eim_sqldb_dyn365byod",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"description": "EIM BYOD Database for ALM NZ Dynamics 365",
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"connectionString": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=eim-uat-sqlserv-dyn365byod-almnz.database.windows.net;Initial Catalog=eim-uat-sqldb-dyn365byod-almnz;User ID=eim-uat-dyn365byod-admin",
+			"password": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "eimprodkv",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "eimuatsqldbdynsec"
+			}
+		}
+	}
+}
